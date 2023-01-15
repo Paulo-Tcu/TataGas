@@ -1,0 +1,46 @@
+.quem-somos {
+    padding: 1rem 1.5rem;
+    color: #FDFDFD;
+}
+
+.quem-somos__container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.quem-somos__container--img{
+    margin-top: 1.5rem;
+    width: 30%;
+    height: 15.2rem;
+}
+
+.quem-somos__container--img img{
+    width: 100%;
+    border-radius: 20%;
+}
+
+.quem-somos__container--texto h2 {
+    text-align: center;
+}
+
+.quem-somos__container--texto{
+    width: 400px;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item__titulo {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    border-bottom: #FDFDFD solid 1px;
+    padding-bottom: 8px;
+}
+
+.item__texto {
+    line-height: normal;
+}
