@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="./css/quem-somos.css">
         <link rel="stylesheet" href="./css/sobre.css">
         <link rel="stylesheet" href="./css/diferenciais.css">
+        <link rel="stylesheet" href="./css/produtos.css">
+        <link rel="stylesheet" href="./css/teste.css">
 
 
     </head>
@@ -27,6 +29,13 @@
         </header>
 
         <main>
+            <section>
+                <div id="banner">
+                    <img src="./img/propaganda1.jpg" id="banner-image">
+                    <div id="prev-button" class="banner-button">&#10094;</div>
+                    <div id="next-button" class="banner-button">&#10095;</div>
+                  </div>
+            </section>
 
             <section class="sobre container">
                 <div class="sobre__conteudo">
@@ -71,43 +80,28 @@
                 </ul>
             </section>
 
-            <section class="quem-somos">
-                <div class="quem-somos__container">
-                    <div class="quem-somos__container--img">
-                        <img src="./img/missao.jpg" alt="imagem missão da empresa">
-                    </div>
-                    <div class="quem-somos__container--texto">
-                        <h2 class="item__titulo">Missão</h2>
-                            <p class="item__texto">Nossão missão é oferecer <strong>produtos de alta qualidade</strong> e entrega de serviços com 
-                                <strong>excelência e agilidade</strong> , garantindo a satisfação dos nossos clientes.
-                            </p>
-                    </div>
-                </div>
-                <div class="quem-somos__container">
-                    <div class="quem-somos__container--texto">
-                        <h2 class="item__titulo ">Visão</h2>
-                        <p class="item__texto"> Nosso objetivo é ser referência no mercado no ramo apresentado, com isso ser a escolha natural
-                            da família brasileira.
+            <section class="produtos container">
+                <section class="produtos__container">
+                    <img src="./img/tipos_botijao.png" class="produtos__descricao--img" alt="Tipos de produtos">
+                    
+                    <div class="produtos__descricao">
+                       <!-- <img src="./img/Logo Tata Gas.png" alt="logo tatá gás" class="produtos__descricao--logo"> -->
+                       <div class="produtos__descricao__cabecalho">
+                            <img src="./img/icone_fogo_gas.png" alt="icone gás de cozinha" class="produtos__descricao__cabecalho--icone">
+                           <h2 class="produtos__descricao--titulo">Produtos do Tatá Gás</h2>
+                       </div>
+                        <p>
+                            Aqui no Tatá gás trabalhamos com diversos tipos botijão de gás, tudo para atender a qualquer tipo de demanda dos nossos clientes.
                         </p>
-                    </div>
-                    <div class="quem-somos__container--img">
-                        <img src="./img/visao.jpg" alt="imagem missão da empresa">
-                    </div>
-                </div>
-                <div class="quem-somos__container">
-                    <div class="quem-somos__container--img">
-                        <img src="./img/valores.jpg" alt="imagem missão da empresa">
-                    </div>
-                    <div class="quem-somos__container--texto">
-                        <h2 class="item__titulo">Valores</h2>
-                        <p class="item__texto">Equipe experiente e especializada! Testamos todos os produtos antes do lançamento.
+                        <p>
+                            Dispomos dos botijões de 2kg, 5kg, 13kg, 20kg e 45kg. Uma grande variedade de produtos com alta qualidade e agilidade na entrega.
                         </p>
+                        <input type="button" value="Descrição" alt="Botão descrição produtos" class="produtos__descricao--botao button__primario">
                     </div>
-                </div>
-                
+                </section>
             </section>
         </main>
-
+        <script src="./js/banner.js"></script>
         <footer>
 
         </footer>
