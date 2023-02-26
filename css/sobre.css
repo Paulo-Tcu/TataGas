@@ -1,40 +1,46 @@
 .sobre {
-    padding-top: 5rem;
+    padding-top: 3.5rem;
     padding-bottom: 3rem;
     display: flex;
+    background-color: #1E1F22;
 }
 
 .sobre__titulo {
-    font-weight: 700;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 1.25rem;
-    text-align: left;
+    background-color: #2c2d31;
 }
 
 .sobre__texto {
     line-height: normal;
     font-size: 1rem;
     margin-bottom: 1rem;
+    color: #d1d1d1;
 }
 
 .sobre__texto--destaque {
     font-weight: 700;
+    border-bottom: 2px solid #f39c12;
+    padding-bottom: 2px;
 }
 
 .sobre__plataformas {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
+    margin: 0 1rem;
     margin-bottom: 1rem;
 }
 .sobre__imagem{
     width: 420px;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%  ;
     box-sizing: border-box;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
+
+.sobre__imagem:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
 
 .sobre__conteudo {
     margin-right: 3rem;
@@ -43,5 +49,8 @@
 .sobre__texto--divisao {
     border-bottom: 1px solid white;
     padding-bottom: 1.5rem;
+    border-bottom: 1px dashed #d1d1d1;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
 }
 
