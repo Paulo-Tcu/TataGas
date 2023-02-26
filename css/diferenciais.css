@@ -1,7 +1,10 @@
 .diferenciais {
-    padding-top: 3.5rem;
     padding-bottom: 3.5rem;
     background-color: #35363de5;
+}
+
+.diferenciais__titulo {
+    background-color: #35363dc6;
 }
 
 .diferenciais__lista {
@@ -20,6 +23,10 @@
     background-repeat: no-repeat;
 
     background-position: top 1.5rem left 2.5rem;
+}
+
+.diferenciais__item:last-child {
+    margin-top: 2rem;
 }
 
 .diferenciais__item--missao {

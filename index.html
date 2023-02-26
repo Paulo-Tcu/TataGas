@@ -11,7 +11,8 @@
         <link rel="stylesheet" href="./css/sobre.css">
         <link rel="stylesheet" href="./css/diferenciais.css">
         <link rel="stylesheet" href="./css/produtos.css">
-        <link rel="stylesheet" href="./css/teste.css">
+        <link rel="stylesheet" href="./css/banner.css">
+        <link rel="stylesheet" href="./css/buttom.css">
 
 
     </head>
@@ -29,17 +30,17 @@
         </header>
 
         <main>
-            <section>
-                <div id="banner">
+            <section class="banner container">
+                <div id="banner-container">
                     <img src="./img/propaganda1.jpg" id="banner-image">
                     <div id="prev-button" class="banner-button">&#10094;</div>
                     <div id="next-button" class="banner-button">&#10095;</div>
-                  </div>
+                </div>
             </section>
 
             <section class="sobre container">
                 <div class="sobre__conteudo">
-                    <h2 class="sobre__titulo">Sobre</h2>
+                    <h2 class="sobre__titulo titulo-h2">Sobre</h2>
                     <p class="sobre__texto">Somos o melhor revendedor de <strong class="sobre__texto--destaque">gás de cozinha e água mineral da região</strong>!</p>
                     <p class="sobre__texto">
                         Estamos localizados na cidade de Hortolândia, trabalhando com venda de produtos de alta qualidade e agilidade na entrega.
@@ -58,6 +59,7 @@
             </section>
 
             <section class="diferenciais container">
+                <h2 class="diferenciais__titulo titulo-h2">DIFERENCIAIS</h2>
                 <ul class="diferenciais__lista ">
                     <li class="diferenciais__item diferenciais__item--missao">
                         <h2 class="item__titulo">Missão</h2>
@@ -81,29 +83,68 @@
             </section>
 
             <section class="produtos container">
-                <section class="produtos__container">
-                    <img src="./img/tipos_botijao.png" class="produtos__descricao--img" alt="Tipos de produtos">
-                    
-                    <div class="produtos__descricao">
-                       <!-- <img src="./img/Logo Tata Gas.png" alt="logo tatá gás" class="produtos__descricao--logo"> -->
-                       <div class="produtos__descricao__cabecalho">
-                            <img src="./img/icone_fogo_gas.png" alt="icone gás de cozinha" class="produtos__descricao__cabecalho--icone">
-                           <h2 class="produtos__descricao--titulo">Produtos do Tatá Gás</h2>
-                       </div>
-                        <p>
-                            Aqui no Tatá gás trabalhamos com diversos tipos botijão de gás, tudo para atender a qualquer tipo de demanda dos nossos clientes.
-                        </p>
-                        <p>
-                            Dispomos dos botijões de 2kg, 5kg, 13kg, 20kg e 45kg. Uma grande variedade de produtos com alta qualidade e agilidade na entrega.
-                        </p>
-                        <input type="button" value="Descrição" alt="Botão descrição produtos" class="produtos__descricao--botao button__primario">
+                <h2 class="produtos__titulo titulo-h2">Produtos</h2>
+                <div class="produtos__itens">
+                    <div class="produtos__item">
+                        <img src="./img/botijao.png" alt="Produto botijão de gás">
+                        <div class="buttons">
+                            <button class="blob-btn">
+                              Comprar
+                              <span class="blob-btn__inner">
+                                <span class="blob-btn__blobs">
+                                  <span class="blob-btn__blob"></span>
+                                  <span class="blob-btn__blob"></span>
+                                  <span class="blob-btn__blob"></span>
+                                  <span class="blob-btn__blob"></span>
+                                </span>
+                              </span>
+                            </button>
+                            <br/>
+                          
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <defs>
+                              <filter id="goo">
+                                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                                <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                              </filter>
+                            </defs>
+                          </svg>
+                        </div>
                     </div>
-                </section>
+                    <div class ="produtos__item">
+                        <img src="./img/Galao-agua.png" alt="Produto galão de água mineral">
+                        <div class="buttons">
+                            <button class="blob-btn">
+                              Comprar
+                              <span class="blob-btn__inner">
+                                <span class="blob-btn__blobs">
+                                  <span class="blob-btn__blob"></span>
+                                  <span class="blob-btn__blob"></span>
+                                  <span class="blob-btn__blob"></span>
+                                  <span class="blob-btn__blob"></span>
+                                </span>
+                              </span>
+                            </button>
+                            <br/>
+                          
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <defs>
+                              <filter id="goo">
+                                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                                <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                              </filter>
+                            </defs>
+                          </svg>
+                        </div>
+                    </div>
             </section>
+        </section>
         </main>
         <script src="./js/banner.js"></script>
         <footer>
-
+            
         </footer>
     </body>
 </html>
