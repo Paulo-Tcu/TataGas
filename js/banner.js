@@ -26,4 +26,15 @@ var images = [
     bannerImage.src = images[index];
     //bannerImage.style.transform = "translateX(-" + (100 * index) + "%)";
   });
+
+  const iconWhatsapp = document.querySelector("#icon-whatsapp");
+
+iconWhatsapp.addEventListener("mouseover", function() {
+  iconWhatsapp.classList.remove("heart-beat");
+});
+
+iconWhatsapp.addEventListener("mouseout", function() {
+  iconWhatsapp.classList.add("heart-beat");
+});
+
   
