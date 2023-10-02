@@ -3,17 +3,24 @@
 }
 
 #banner-container {
-    width: min(70vw, 1344px);
-    height: min(50vh,350px);
+    width: min(70vw);
+    height: min(50vh);
     position: relative;
     overflow: hidden;
     border-radius: 10px;
     align-items: center;
+
+    @media screen and  (max-width: 480px) {
+      width: min(80vw); 
+      height: min(35vh);
+      padding-bottom: 1rem;
+    }
   }
   
   #banner-image {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
   }
   
   
@@ -29,10 +36,18 @@
   
   #prev-button {
     left: 10px;
+
+    @media screen and  (max-width: 480px) {
+      left: 2px;
+    }
   }
   
   #next-button {
     right: 10px;
+
+    @media screen and  (max-width: 480px) {
+      right: 2px;
+    }
   }
   
   /*

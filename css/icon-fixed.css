@@ -1,18 +1,32 @@
 .fixed-icon {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 10vh;
+    right: 1.5rem;
     z-index: 9999;
+    border: none;
+
+    @media screen and  (max-width: 480px) {
+      display: none;
+    }
+
   }
   
   .fixed-icon img {
     font-size: 4rem;
-    padding: 0.5rem;
     width: 80px;
+    border: none;
+
+    @media screen and  (max-width: 480px) {
+     display: none; 
+    }
   }
   
   .fixed-icon img:hover {
     transition: 0.7s;
     width: 100px;
     cursor: pointer;
+
+    @media screen and  (max-width: 480px) {
+     display: none; 
+    }
   }

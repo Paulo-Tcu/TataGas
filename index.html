@@ -2,11 +2,10 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	      <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Tatá Gás</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-9kAsI00vpjhEztJbR2QzF/vWKbxjwU6wKYU6Gq3z1KjZfvOeycIhbyO6QzdB6UxbjKU//O6qwNwpB3C1ovD9g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/cabecalho.css">
         <link rel="stylesheet" href="./css/quem-somos.css">
@@ -17,9 +16,7 @@
         <link rel="stylesheet" href="./css/buttom.css">
         <link rel="stylesheet" href="./css/contato.css">
         <link rel="stylesheet" href="./css/icon-fixed.css">
-
-
-
+        <link rel="stylesheet" href="./css/footer.css">
     </head>
     <body>
         <header class="cabecalhoPrincipal">
@@ -27,29 +24,27 @@
                 <img class="logo" title="logo" src="./img/Logo Tata Gas.png">
                 <nav class="cabecalho__nav">
                     <a class="cabecalho__nav-item" href="#">Início</a>
-                    <a class="cabecalho__nav-item" href="#">Quem somos</a>
-                    <a class="cabecalho__nav-item" href="#">Produtos</a>
-                    <a class="cabecalho__nav-item" href="#">Contato</a>
+                    <a class="cabecalho__nav-item" href="#sobre-empresa">Quem somos</a>
+                    <a class="cabecalho__nav-item" href="#produtos-empresa">Produtos</a>
+                    <a class="cabecalho__nav-item" href="#contato-empresa">Contato</a>
                 </nav>
             </div>
         </header>
         <section class="icon__fixed ">
           <div class="fixed-icon">
-            <a href="https://wa.me/5516982712949" target="_blank">
-              <img id="icon-whatsapp" class="heart-beat" src="./img/icon-whatsapp.png"></i>
-            </a>
+              <i id="icon-whatsapp"><img class="heart-beat" src="./img/icons/icon-whatsapp.png"></i>
           </div>          
         </section>
         <main>
             <section class="banner container">
                 <div id="banner-container">
-                    <img src="./img/propaganda1.jpg" id="banner-image">
+                    <img src="./img/banner/propaganda1.jpg" id="banner-image">
                     <div id="prev-button" class="banner-button">&#10094;</div>
                     <div id="next-button" class="banner-button">&#10095;</div>
                 </div>
             </section>
 
-            <section class="sobre container">
+            <section id="sobre-empresa" class="sobre container">
                 <div class="sobre__conteudo">
                     <h2 class="sobre__titulo titulo-h2">Sobre</h2>
                     <p class="sobre__texto">Somos o melhor revendedor de <strong class="sobre__texto--destaque">gás de cozinha e água mineral da região</strong>!</p>
@@ -93,14 +88,14 @@
                 </ul>
             </section>
 
-            <section class="produtos container">
+            <section id="produtos-empresa" class="produtos container">
                 <h2 class="produtos__titulo titulo-h2">Produtos</h2>
                 <div class="produtos__itens">
                     <div class="produtos__item">
                         <h3>Gás GLP</h3>
-                        <img src="./img/botijao.png" alt="Produto botijão de gás">
+                        <img src="./img/produtos/botijao.png" alt="Produto botijão de gás">
                         <div class="buttons">
-                            <button class="blob-btn">
+                            <button id="btn-gas" class="blob-btn">
                               Comprar
                               <span class="blob-btn__inner">
                                 <span class="blob-btn__blobs">
@@ -126,9 +121,9 @@
                     </div>
                     <div class ="produtos__item">
                         <h3>Água Mineral</h3>
-                        <img src="./img/Galao-agua.png" alt="Produto galão de água mineral">
+                        <img src="./img/produtos/Galao-agua.png" alt="Produto galão de água mineral">
                         <div class="buttons">
-                            <button class="blob-btn">
+                            <button id="btn-agua" class="blob-btn">
                               Comprar
                               <span class="blob-btn__inner">
                                 <span class="blob-btn__blobs">
@@ -153,7 +148,7 @@
                         </div>
                     </div>
             </section>
-            <section class="contato">
+            <section id="contato-empresa" class="contato">
               <div class="contato__informacao">
                 <h2 class="contato__titulo titulo-h2">Contatos</h2>
                 <img title="logo" src="./img/Logo Tata Gas.png">
@@ -202,9 +197,24 @@
               </div>
             </section>
         </main>
-        <script src="./js/banner.js"></script>
         <footer>
-            
+          <section class="rodape">
+            <img class="footer_img" src="./img/footer/QhbmAO.jpg" alt="footer background">
+            <div class="social-icons">
+              <a href="#" class="social-icon">
+                <img src="./img/footer/facebook.png" alt="Facebook">
+              </a>
+              <a href="#" class="social-icon">
+                <img src="./img/footer/instagram.png" alt="Instagram">
+              </a>
+              <a href='javascript:void(0);' onclick='RedirectWhatsMsgGeneric();' class="social-icon">
+                <img src="./img/footer/whatsapp.png" alt="WhatsApp">
+              </a>
+            </div>
+            <p class="copyright">© Tatá Gás 2023</p>
+          </section>
         </footer>
+        <script src="./js/banner.js"></script>
+        <script src="./js/buttonRedirectWhatsapp.js"></script>        
     </body>
 </html>

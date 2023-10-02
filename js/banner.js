@@ -1,7 +1,7 @@
 var images = [
-    "./img/propaganda1.jpg",
-    "./img/propaganda2.jpg",
-    "./img/propaganda3.jpg"
+    "./img/banner/propaganda1.jpg",
+    "./img/banner/propaganda2.jpg",
+    "./img/banner/propaganda3.jpg"
   ];
   
   var index = 0;

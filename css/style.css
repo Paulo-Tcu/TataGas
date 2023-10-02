@@ -1,14 +1,13 @@
-/* body {
-    background-color: #1E1F22;
-    width: 100%;
-    height: 100%;
-} */
-
 .container {
     padding-top: 1rem;
     padding-right: 15%;
     padding-left: 15%;
     color:  #FFFFFF;
+
+    @media screen and (max-width: 480px){
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }
 
 .button__primario{

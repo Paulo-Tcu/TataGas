@@ -1,0 +1,42 @@
+/* Estilos para o rodapé */
+footer{
+    position: relative;
+    border: none;
+}
+
+.footer_img {
+    width: 100%;
+    height: 400px;
+}
+  
+/* Estilos para os ícones de rede social */
+.social-icons {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%); /* Centraliza horizontal e verticalmente */
+    display: flex;
+    gap: 10px; /* Espaço entre os ícones */
+  }
+  
+  .social-icon img {
+    width: 60px; /* Tamanho maior dos ícones, ajuste conforme necessário */
+    height: 60px;
+    border: none;
+    margin-left: 0.8rem;
+  }
+  
+  /* Estilos para o texto de direitos autorais */
+  .copyright {
+    position: absolute;
+    bottom: 0; /* Posição na parte inferior do rodapé */
+    margin-left: 50%;
+    margin-bottom: 10%;
+    transform: translateX(-50%); /* Centraliza horizontal e verticalmente */
+    font-size: 1rem;
+    text-align: center; /* Centraliza o texto horizontalmente */
+    color: #dddbdb;
+  }
+  
+  
+  

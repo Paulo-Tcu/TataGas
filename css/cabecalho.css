@@ -18,10 +18,24 @@
     height: 100%;
     margin-left: 15%;
     margin-right: 15%;
+
+    @media screen and  (max-width: 480px) {
+        margin-left: 10%;
+        width: 100%;
+    }
 }
+
+
 
 .logo {
     width: 20%;
+
+    @media (max-width: 480px) {
+        width: 30%;
+        position: absolute;
+        margin-bottom: 10vh;
+        margin-left: 25%;
+    }
 }
 
 .cabecalho__nav {
@@ -34,6 +48,12 @@
     color: #EBE7D9;
     text-decoration: none;
     font-size: 1.23rem;
+
+    @media (max-width: 768px) {
+        margin-left: 15px;
+        font-size: 1rem;
+        padding-top: 5px;
+    }
 }
 
 .cabecalho__nav-item:hover {
@@ -44,5 +64,9 @@
     border-radius: 5px;
     padding: 0.8rem;
     transition: 0.65s;
-    font-weight: bold;      ;
+    font-weight: bold;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
